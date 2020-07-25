@@ -2,8 +2,9 @@ import mongoose from 'mongoose';
 
 mongoose.connect('mongodb://localhost:57017/mern-ecomm', {
   useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
 });
-mongoose.set('debug', true);
 
 const db = mongoose.connection;
 
